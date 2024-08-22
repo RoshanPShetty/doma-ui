@@ -1,50 +1,74 @@
-# React + TypeScript + Vite
+# Doma UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/RoshanPShetty/doma-ui/main.yml)](https://github.com/RoshanPShetty/doma-ui/actions)
 
-Currently, two official plugins are available:
+Doma UI is an open-source component library designed to streamline your development process by offering a collection of customizable and reusable UI components. Built using **React**, **TailwindCSS**, **Framer**, and **Storybook**, Doma UI aims to enhance the efficiency and aesthetics of your web applications.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- **Modular Components**: A variety of ready-to-use UI components that can be easily integrated into your React projects.
+- **Customizable**: Leverage the power of TailwindCSS to quickly customize the appearance and behavior of components to fit your design needs.
+- **Framer Motion**: Seamless integration of animations and transitions, powered by Framer.
+- **Storybook Integration**: Explore, test, and document your components in isolation using Storybook.
+- **Responsive Design**: Built with mobile-first design principles to ensure components look great on any screen size.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 📦 Installation
 
-- Configure the top-level `parserOptions` property like this:
+To install Doma UI in your project, run:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+npm install doma-ui
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Or if you're using yarn:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+yarn add doma-ui
 ```
+
+## 🚀 Usage
+
+To use a component from Doma UI, simply import it into your project and start building!
+
+```javascript
+import { Button } from "doma-ui";
+
+function App() {
+	return (
+		<div className="App">
+			<Button variant="primary">Click Me</Button>
+		</div>
+	);
+}
+```
+
+## 📚 Documentation
+
+For detailed documentation on each component, please refer to the [Storybook documentation](https://your-storybook-link-here).
+
+## 🤝 Contributing
+
+Contributions are welcome! If you have an idea for a new component or improvements to existing ones, feel free to fork the repository and submit a pull request. Please make sure to follow the [contributing guidelines](CONTRIBUTING.md).
+
+## 🛠️ Roadmap
+
+- [ ] Add more basic components (e.g., Input, Modal, Tooltip)
+- [ ] Improve component documentation with more examples and use cases
+- [ ] Expand animation presets using Framer Motion
+- [ ] Add dark mode support
+
+## 📄 License
+
+Doma UI is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## 🙏 Acknowledgements
+
+- [React](https://reactjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Framer](https://www.framer.com/motion/)
+- [Storybook](https://storybook.js.org/)
+
+## 📫 Contact
+
+For any inquiries or support, you can reach out via [email](mailto:roshanshetty2000@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/roshanpshetty/).
